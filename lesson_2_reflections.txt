@@ -1,0 +1,12 @@
+What happens when you initialize a repository? Why do you need to do it?
+When you initialize a repository the .git repository is created. You need to do it because
+ the .git repository is where the metadata of the history of the files are stored.
+ 
+ How is the staging area different from the working directory 
+ and the repository? What value do you think it offers?
+ The working directory is like your usual directory of files. Changes are not tracked.
+ The repository is where metadata on the changes of certain files are stored. Snapshots are stored 
+ when you choose to commit changes that you've made to files in the staging directory.
+ The staging directory is the intermediate area. You can choose to add files to the staging directory and make changes,
+ but the changes won't be stored as commits until you commit them to the repository. It allows you to choose
+ which files from the working directory to track.
