@@ -10,3 +10,23 @@ When you initialize a repository the .git repository is created. You need to do 
  The staging directory is the intermediate area. You can choose to add files to the staging directory and make changes,
  but the changes won't be stored as commits until you commit them to the repository. It allows you to choose
  which files from the working directory to track.
+ 
+ How can you use the staging area to make sure you have one commit per logical change?
+ Make the logical change in the staging area before committing. You can use git diff --staged
+ to see the difference between staging area and your most recent commit in your repository.
+
+What are some situations when branches would be helpful in keeping your history organized? 
+How would branches help?
+Branches would be helpful when you want to create different versions of your master file. It makes it easier
+to keep track of the most recent file with respect to a particular version. If we did not use branches, the 
+history tracking would be linear and you would have to checkout the commit ID of the version you want every time you want
+to make a change to it. This could get messy quickly if you have multiple versions.
+
+How do the diagrams help you visualize the branch structure?
+You can easily see which commits can be reached by other commits, and what history each branch retains.
+You can also easily see commits which would not affect other branches (the detached head state commits).
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+You get a new commit with the commonalities of the two branches, plus any insertions/deletions introduced between the
+two versions. We represent it in the diagram the way we do because with the commit from the new merge, when we run git
+log, we can see the history from both branches. 
