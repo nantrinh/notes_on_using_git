@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+The remote repository would be accessible from any device with an internet connection.
+If you keep your work local, in the event that you lose your computer, or someone hacks into
+your computer, you will lose your work and not have backup.
