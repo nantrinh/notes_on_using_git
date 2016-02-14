@@ -1,21 +1,43 @@
 When would you want to use a remote repository rather than keeping all your work local?
-The remote repository would be accessible from any device with an internet connection.
-If you keep your work local, in the event that you lose your computer, or someone hacks into
-your computer, you will lose your work and not have backup.
+	The remote repository would be accessible from any device with an internet connection.
+	If you keep your work local, in the event that you lose your computer, or someone hacks into
+	your computer, you will lose your work and not have backup.
 
 Why might you want to always pull changes manually rather than having Git 
-automatically stay up-to-date with your remote repository?
-Sometimes you may want to have some changes on the remote but not on your local,
-or vice versa. 
+	automatically stay up-to-date with your remote repository?
+	Sometimes you may want to have some changes on the remote but not on your local,
+	or vice versa. 
 
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
-A fork is a copy of an existing Github repository, possibly owned by someone else, into your own account.
-A clone is a copy of an existing Github repository, possibly owned by someone else, into your local Git repository.
-A branch is split from an existing branch in your local Git repository. 
-Forks are useful when you want to make changes to files from a repository that you do not have permission to change,
-or do not want to change.
-Clones are useful when you want to make changes on your computer to files from a remote repository. (It
-may be easier to make changes on your computer than it is to change the file directly on the remote repository.)
-Branches are useful when  you want to version a file that you are working on locally. For instance, if the master
-is a game, you may want to create a branch for easy mode, and a branch for hard mode, and then maybe branches
-within those branches, for instance, a branch for coins within easy mode, and a branch for monsters in hard mode.
+	A fork is a copy of an existing Github repository, possibly owned by someone else, into your own account.
+	A clone is a copy of an existing Github repository, possibly owned by someone else, into your local Git repository.
+	A branch is split from an existing branch in your local Git repository. 
+	Forks are useful when you want to make changes to files from a repository that you do not have permission to change,
+	or do not want to change.
+	Clones are useful when you want to make changes on your computer to files from a remote repository. (It
+	may be easier to make changes on your computer than it is to change the file directly on the remote repository.)
+	Branches are useful when  you want to version a file that you are working on locally. For instance, if the master
+	is a game, you may want to create a branch for easy mode, and a branch for hard mode, and then maybe branches
+	within those branches, for instance, a branch for coins within easy mode, and a branch for monsters in hard mode.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+	You can view differences between your latest master and the last known state of the remote. In the case of
+	collaboration, you may want to merge those changes, and having the local copy will allow you to use git diff
+	to view the differences and perform conflict resolution and sync your latest version with the latest version
+	on the remote.
+
+How would you collaborate without using Git or GitHub? 
+What would be easier, and what would be harder?
+	We would likely send files back and forth, or use google docs. It would be easier because
+	it wouldn't require knowledge of Git and Github, but it would be harder to keep track of the
+	changes made, and have an automated way of asking collaborators to review your code before
+	pushing changes to the master branch.
+	
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+	You would want to make changes in a separate branch rather than directly in master when there is a
+	change that you want to introduce that (a) you are not entirely sure that you want to merge into the
+	master branch, or (b) you want to get feedback from collaborators before merging into master (code review).
+	Changing the master branch directly is certainly faster (less merging off-branch), but
+	changing a separate branch first can allow you to seek feedback and notify other people working on the project
+	(via pull requests) about changes that you want to introduce to master.

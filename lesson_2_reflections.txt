@@ -30,3 +30,8 @@ What is the result of merging two branches together? Why do we represent it in t
 You get a new commit with the commonalities of the two branches, plus any insertions/deletions introduced between the
 two versions. We represent it in the diagram the way we do because with the commit from the new merge, when we run git
 log, we can see the history from both branches. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Git's automatic merging makes the merging process easier when there are no conflicts, and points out conflicts to you when
+they occur. The downside to this is if you merged manually, you could make calls on the spot about which changes to include,
+but then it may take more time.
